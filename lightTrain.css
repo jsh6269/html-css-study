@@ -1,0 +1,18 @@
+div:not(#wrapper){
+    display: inline-block;
+    border: 1px dashed black;
+    width: 20px;
+    height: 20px;
+}
+.red1{
+    background-color: rgba(255,0,0,0.6);
+}
+.red2{
+    background-color: rgba(255,0,0,0.8);
+}
+.red3{
+    background-color: rgba(255,0,0,1);
+}
+.trans{
+    background-color: transparent;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>회원가입</title>
+</head>
+<body>
+<h2>회원가입</h2>
+<form method="post" action="joined.html">
+    <p><label>이름: <input placeholder="홍길동" name="name" required autofocus> </label></p>
+    <p><label>아이디: <input name="id" placeholder="ID는 반드시 입력하세요." required> </label></p>
+    <p><label>암호: <input name="password" type="password" required></label></p>
+    
+    <fieldset>
+        <legend>개인정보</legend>
+        <label>성별: </label>
+        <label><input type="radio" name="sex" value="male">남성</label>
+        <label><input type="radio" name="sex" value="female">여성</label>
+        <p><label>주민등록번호: <input type="password" name="resNum1" maxlength=6></label> - <input type="password" name="resNum2" maxlength=7></p>
+        <p><label>휴대전화: </label>
+        <select name="telCode">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="012">012</option>
+            <option value="013">013</option>
+            <option value="014">014</option>
+        </select>
+        - <input type="tel" name="telnum" placeholder="1234-5678">
+        </p>
+        <fieldset>
+            <legend>관심분야</legend>
+            <p>
+                <input type="checkbox" name="interesting" value="HTML5" id="HTML5"><label for "HTML5">HTML5</label>
+                <label><input type="checkbox" name="interesting" value="CSS3">CSS3</label>
+            </p>
+            <p>
+                <input type="checkbox" name="interesting" value="HTML3" id="HTML5"><label for "HTML5">HTML3</label>
+                <label><input type="checkbox" name="interesting" value="python">python</label>
+            </p>
+        </fieldset><br>
+        <label>하고 싶은 말:</label><br>
+        <textarea cols="50" rows="5"></textarea>
+    </fieldset>
+    <p>
+        <button type="submit">가입</button>
+        <button type="reset">초기화</button>        
+    </p>
+</form>
+</body>
+</html>
